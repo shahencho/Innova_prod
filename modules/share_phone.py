@@ -25,7 +25,7 @@ async def phone_number_handler(update: Update, context: ContextTypes.DEFAULT_TYP
     # Continue with authenticated experience...
 
 def main():
-    app = ApplicationBuilder().token("7248856238:AAGk_1S6HqaV5jglqrCrOaRdD4BTcLscTsE").build()
+    app = ApplicationBuilder().token("xxxx").build()
     
     app.add_handler(CommandHandler("start", start))
     app.add_handler(MessageHandler(filters.CONTACT, phone_number_handler))
